@@ -11,5 +11,5 @@ export default function About() {
 }
 
 const styles = StyleSheet.create({
-  container: {},
+  container: { padding: 24 },
 });
