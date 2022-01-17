@@ -6,6 +6,7 @@ import About from "./screens/about";
 import Home from "./screens/home";
 import ReviewDetails from "./screens/reviewDetails";
 import AppLoading from "expo-app-loading";
+import HomeStack from "./routes/homeStack";
 
 const getFont = () =>
   Font.loadAsync({
@@ -16,7 +17,7 @@ const getFont = () =>
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
   if (fontsLoaded) {
-    return <Home />;
+    return <HomeStack />;
   } else {
     return (
       <AppLoading
