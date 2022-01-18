@@ -1,10 +1,6 @@
-import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import * as Font from "expo-font";
 import { StyleSheet, Text, View } from "react-native";
-import About from "./screens/about";
-import Home from "./screens/home";
-import ReviewDetails from "./screens/reviewDetails";
 import AppLoading from "expo-app-loading";
 import HomeStack from "./routes/homeStack";
 
