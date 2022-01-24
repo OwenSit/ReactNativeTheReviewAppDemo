@@ -6,10 +6,10 @@ const Stack = createNativeStackNavigator();
 
 export default function AboutStack() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="About Page" component={About} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="About Page" component={About} />
+    </Stack.Navigator>
+    // </NavigationContainer>
   );
 }

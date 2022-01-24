@@ -6,6 +6,7 @@ import { StyleSheet, Text, View } from "react-native";
 import AppLoading from "expo-app-loading";
 import HomeStack from "./routes/homeStack";
 import AboutStack from "./routes/aboutStack";
+import RootDrawerNavigator from "./routes/drawer";
 
 const getFont = () =>
   Font.loadAsync({
@@ -16,7 +17,7 @@ const getFont = () =>
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
   if (fontsLoaded) {
-    return <HomeStack />;
+    return <RootDrawerNavigator />;
   } else {
     return (
       <AppLoading
