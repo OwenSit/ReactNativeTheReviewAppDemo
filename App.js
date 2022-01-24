@@ -1,4 +1,5 @@
 import "react-native-gesture-handler";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import { useState } from "react";
 import * as Font from "expo-font";
 import { StyleSheet, Text, View } from "react-native";
@@ -15,8 +16,7 @@ const getFont = () =>
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
   if (fontsLoaded) {
-    // return <HomeStack />;
-    return <AboutStack />;
+    return <HomeStack />;
   } else {
     return (
       <AppLoading
